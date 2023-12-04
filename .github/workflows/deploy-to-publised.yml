@@ -1,0 +1,16 @@
+name: Deploy Published
+
+on:
+  release:
+    types: published
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+
+      - name: deploy
+        run: echo "deploying"
