@@ -1,6 +1,5 @@
 import sendResponse from "../../src/utils/sendResponse";
 
-
 describe("sendResponse", () => {
   let mockResponse;
 
