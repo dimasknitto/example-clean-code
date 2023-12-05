@@ -1,5 +1,4 @@
-import sendResponse from "../../src/utils/sendResponse";
-
+import sendResponse from "../../src/utils/sendResponse.js";
 
 describe("sendResponse", () => {
   let mockResponse;
@@ -51,7 +50,7 @@ describe("sendResponse", () => {
     const testData = { key: "value" };
     const status = "string";
     function responeErrorStatus() {
-      sendResponse({ data: testData, status: status }, mockResponse);
+      sendResponse({ data: testData, status }, mockResponse);
     }
 
     expect(responeErrorStatus).toThrow(/status/);
