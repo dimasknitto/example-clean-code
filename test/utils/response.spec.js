@@ -50,7 +50,7 @@ describe("sendResponse", () => {
     const testData = { key: "value" };
     const status = "string";
     function responeErrorStatus() {
-      sendResponse({ data: testData, status: status }, mockResponse);
+      sendResponse({ data: testData, status }, mockResponse);
     }
 
     expect(responeErrorStatus).toThrow(/status/);

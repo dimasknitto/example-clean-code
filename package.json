@@ -10,7 +10,8 @@
     "test:cov": "jest --coverage",
     "release": "release-it",
     "prepare": "husky install",
-    "format:all": "prettier --write \"**/*.+(js|mjs|cjs|jsx|ts|tsx|css|scss|json|yml|yaml)\" --ignore-path .gitignore --ignore-path .prettier"
+    "format:all": "prettier --write \"**/*.+(js|mjs|cjs|jsx|ts|tsx|css|scss|json|yml|yaml)\" --ignore-path .gitignore --ignore-path .prettier",
+    "lint": "eslint --fix **/*.js"
   },
   "keywords": [],
   "author": "",
@@ -29,6 +30,11 @@
   },
   "devDependencies": {
     "@types/jest": "^29.5.10",
+    "eslint": "^7.32.0 || ^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-prettier": "^5.0.1",
     "husky": "^8.0.3",
     "jest": "^29.7.0",
     "lint-staged": "^15.2.0",

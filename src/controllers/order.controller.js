@@ -11,4 +11,4 @@ function getOrder(req, res) {
   );
 }
 
-export { getOrder };
+export default getOrder;

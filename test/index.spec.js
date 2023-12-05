@@ -1,4 +1,3 @@
-import request from "supertest";
 import server from "../index.js";
 
 describe("Express App", () => {

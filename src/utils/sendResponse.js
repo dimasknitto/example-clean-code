@@ -33,7 +33,7 @@ function sendResponse({ data, status = 200, message }, response) {
 
   return response.status(status).send({
     code: status,
-    message: message ? message : MessageCode[status],
+    message: message || MessageCode[status],
     result: data,
   });
 }
