@@ -8,6 +8,9 @@ module.exports = {
     {
       env: {
         node: true,
+        jasmine: true,
+        jest: true,
+        "jest/globals": true,
       },
       files: [".eslintrc.{js,cjs}"],
       parserOptions: {
@@ -19,7 +22,17 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  plugins: ["prettier"],
+  plugins: ["prettier", "jest"],
+  globals: {
+    describe: "readonly",
+    it: "readonly",
+    beforeEach: "readonly",
+    test: "readonly",
+    expect: "readonly",
+    jest: "readonly",
+    afterAll: "readonly",
+    // Add other testing globals if needed
+  },
   rules: {
     "prettier/prettier": "error",
     "import/extensions": [
