@@ -1,4 +1,5 @@
-import sendResponse from "../../utils/sendResponse.js";
+import sendResponse from "../../src/utils/sendResponse";
+
 
 describe("sendResponse", () => {
   let mockResponse;
